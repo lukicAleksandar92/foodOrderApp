@@ -26,6 +26,7 @@ li a:hover{
 .stars {
     display: flex;
     color: #ffd700;
+    margin-bottom: .2rem;
 }
 
 .fas.fa-star {
@@ -38,5 +39,51 @@ li a:hover{
 
 .unchecked {
     color: #e0e0e0;
+}
+
+.content{
+    padding: .5rem 1rem;
+    position: relative;
+}
+
+.favorite{
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+    font-size: 1.2rem;
+}
+
+.favorite.not{
+    color: grey;
+}
+
+.product-item-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.origins{
+    flex: 9;
+}
+
+.origins span{
+    border-radius: 2rem;
+    background-color: whitesmoke;
+    display: inline-block;
+    font-size: .7rem;
+    color: grey;
+    margin-right: .3rem;
+}
+
+.cook-time{
+    font-size: .8rem;
+    flex: 3;
+    text-align: right;
+}
+
+.price{
+    color:#414141;
+    margin-top: .7rem;
 }
   
