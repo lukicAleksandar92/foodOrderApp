@@ -1,7 +1,5 @@
 <div>
-    <input type="text" placeholder="Search Food App!"
-     [(ngModel)]="searchTerm" 
-     (change)="search()"
-     >
+    <input type="text" placeholder="Search Food App!" [(ngModel)]="searchTerm" (keyup.enter)="search()">
     <button (click)="search()">Search</button>
-</div>
+  </div>
+  
