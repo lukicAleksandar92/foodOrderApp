@@ -12,15 +12,17 @@ export class HomeComponent implements OnInit {
 
   foods:Food[] = [];
   
+  
   constructor(private foodservice:FoodService, private route:ActivatedRoute) { }
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
       if(params['searchTerm'])
-      this.foods = this.foodservice.getAll().filter(food => 
-        food.name.toLocaleLowerCase().includes(params['searchTerm'].toLowerCase()))
+      this.foods = this.foodservice.getAllFoodsBySearchTerm(params['searchTerm']);
+        else if (params['tag'])
+          this.foods = this.foodservice.getAllFoodsByTag(params['tag']);
         else
-        this.foods = this.foodservice.getAll()
+          this.foods = this.foodservice.getAll()
     })
   }
 }

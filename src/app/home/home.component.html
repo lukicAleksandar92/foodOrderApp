@@ -1,8 +1,11 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" />
 
 <app-search></app-search>
+<app-tags></app-tags>
+
 <ul>
     <li *ngFor="let food of foods">
+        {{food.tags}}
         <a>
             <img src="{{food.imageUrl}}" alt="1">
             <div class="content">
