@@ -1,0 +1,1 @@
+This Angular-based food app incorporates dynamic content using routing, showcasing detailed food information managed by a dedicated service. Practicing Angular Directives, Routing, Services, Data Binding, etc.
